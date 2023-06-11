@@ -1,5 +1,4 @@
-
-const fakeData  =  [
+const fakeData = [
     {
         id: 1,
         name: "João Oliveira",
