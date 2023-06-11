@@ -53,7 +53,7 @@ const getUser = async (name) => {
 const addUser = async (user) => {
   try {
     const data = await readFile();
-    const newUser = { id: data.length + 1, ...user }
+    const newUser = { id: data.length + 1, ...user, getCount: 0 }
     await writeFile([...data, newUser]);
     return newUser;
   } catch (err) {
